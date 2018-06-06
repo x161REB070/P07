@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<title>SchemeInSVG</title>
+<body>
+<svg width="300" height="200">
+  <circle cx="40" cy="100" r="20" stroke="black"fill="none"/>
+  <line x1="40" y1="35" x2="40" y2="80" stroke="black" />
+  <rect x="100" y="27" width="45" height="15" stroke="black" fill="none" />
+  <line x1="40" y1="120" x2="40" y2="165" stroke="black" />
+  <line x1="40" y1="35" x2="100" y2="35" stroke="black" />
+  <line x1="145" y1="35" x2="230" y2="35" stroke="black" />
+  <line x1="230" y1="35" x2="230" y2="75" stroke="black" />
+  <rect x="222" y="75" width="15" height="45" stroke="black" fill="none" />
+  <line x1="230" y1="120" x2="230" y2="165" stroke="black" />
+  <line x1="40" y1="165" x2="230" y2="165" stroke="black" />
+  <text x="35" y="100" fill="black">+</text>
+  <text x="37" y="115" fill="black">-</text>
+  <text x="70" y="100" fill="black">Us</text>
+  <text x="110" y="60" fill="black">R1</text>
+  <text x="197" y="100" fill="black">R2</text>
+</svg>
+</body>
+</html>

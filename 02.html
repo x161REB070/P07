@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="utf-8"/>
+<title>P07_hover
+</title>
+<h1 id=i1>Attēli ar JavaScript iekš canvas</h1>
+
+<script>
+  window.onload=function() {
+  c=document.getElementById("aa");
+  var ctx=c.getContext('2d'); 
+  ctx.moveTo(0,0);
+  ctx.fillStyle="orange";
+  ctx.fillRect(20,20,200,200);
+  ctx.stroke (); 
+ 
+  c=document.getElementById("bb");
+  var ctx=c.getContext('2d'); 
+  ctx.moveTo(10,15);
+  ctx.lineTo(200,210);
+  ctx.stroke();
+
+  c=document.getElementById("cc");
+  var ctx=c.getContext('2d');
+  ctx.moveTo(0,0);
+  ctx.lineTo(20,20);
+  ctx.lineTo(20,100);
+  ctx.lineTo(100,150);
+  ctx.lineTo(205,150);
+  ctx.lineTo(100,20);
+  ctx.stroke();
+
+  c=document.getElementById("dd");
+  var ctx=c.getContext('2d'); 
+  ctx.beginPath();
+  ctx.arc(70,70,60,0,2*Math.PI);
+  ctx.stroke();
+
+
+  c=document.getElementById("ee");
+  var ctx=c.getContext('2d'); 
+  ctx.beginPath();
+  ctx.ellipse(110, 70, 110, 50, 155 * Math.PI/180, 0, 2 * Math.PI);
+  ctx.stroke();
+
+  c=document.getElementById("ff");
+  var ctx=c.getContext('2d'); 
+  ctx.fillStyle = 'blue';
+  ctx.beginPath();
+  ctx.moveTo(15, 100);
+  ctx.lineTo(100, 10);
+  ctx.lineTo(140, 180);
+  ctx.lineTo(100, 200);
+  ctx.closePath();
+  ctx.fill();
+  ctx.stroke();
+  }
+
+function f1(a){a.style.background="red";}
+function f2(a){a.style.background="white";}
+  </script>
+</head>
+<p>
+  <canvas width=250 height=250 id="aa" onmouseover=f1(this) onmouseout=f2(this)></canvas>
+  <canvas width=250 height=250 id="bb" onmouseover=f1(this) onmouseout=f2(this)></canvas>
+  <canvas width=250 height=200 id="cc" onmouseover=f1(this) onmouseout=f2(this)></canvas>
+  <canvas width=250 height=200 id="dd" onmouseover=f1(this) onmouseout=f2(this)></canvas>
+  <canvas width=250 height=200 id="ee" onmouseover=f1(this) onmouseout=f2(this)></canvas>
+  <canvas width=250 height=200 id="ff" onmouseover=f1(this) onmouseout=f2(this)></canvas>
+</p>
+</html>
